@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-const API_URL = 'http://localhost:8080/api/test/';//firebase
+const API_URL = 'https://argentina-programa-spring.herokuapp.com/';//firebase
 
 @Injectable({
   providedIn: 'root',

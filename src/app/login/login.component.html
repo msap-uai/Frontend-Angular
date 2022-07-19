@@ -33,13 +33,13 @@
           name="password"
           [(ngModel)]="form.password"
           required
-          minlength="6"
+          minlength="3"
           #password="ngModel"
           [ngClass]="{ 'is-invalid': f.submitted && password.errors }"
         />
         <div *ngIf="password.errors && f.submitted" class="invalid-feedback">
           <div *ngIf="password.errors['required']">debe ingresar su password!</div>
-          <div *ngIf="password.errors['minlength']">el password deve tener como minimo 6 caracteres</div>
+          <div *ngIf="password.errors['minlength']">el password deve tener como minimo 3 caracteres</div>
         </div>
       </div>
       <br>
